@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @ponto.titulo %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @ponto.data %>
+</p>
+
+<p>
+  <strong>Staus:</strong>
+  <%= @ponto.staus %>
+</p>
+
+<p>
+  <strong>Solucao:</strong>
+  <%= @ponto.solucao %>
+</p>
+
+<p>
+  <strong>Questao:</strong>
+  <%= @ponto.questao %>
+</p>
+
+<%= link_to 'Edit', edit_ponto_path(@ponto) %> |
+<%= link_to 'Back', pontos_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @pautum.titulo %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @pautum.data %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @pautum.status %>
+</p>
+
+<%= link_to 'Edit', edit_pautum_path(@pautum) %> |
+<%= link_to 'Back', pauta_path %>

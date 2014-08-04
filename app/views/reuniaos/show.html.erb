@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @reuniao.titulo %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @reuniao.data %>
+</p>
+
+<p>
+  <strong>Horainicio:</strong>
+  <%= @reuniao.horaInicio %>
+</p>
+
+<p>
+  <strong>Horafim:</strong>
+  <%= @reuniao.horaFim %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @reuniao.status %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @reuniao.local %>
+</p>
+
+<p>
+  <strong>Ata:</strong>
+  <%= @reuniao.ata %>
+</p>
+
+<p>
+  <strong>Pauta:</strong>
+  <%= @reuniao.pauta %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @reuniao.categoria %>
+</p>
+
+<%= link_to 'Edit', edit_reuniao_path(@reuniao) %> |
+<%= link_to 'Back', reuniaos_path %>

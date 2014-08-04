@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @questao.titulo %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @questao.data %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @questao.status %>
+</p>
+
+<p>
+  <strong>Solucao:</strong>
+  <%= @questao.solucao %>
+</p>
+
+<p>
+  <strong>Pauta:</strong>
+  <%= @questao.pauta %>
+</p>
+
+<%= link_to 'Edit', edit_questao_path(@questao) %> |
+<%= link_to 'Back', questaos_path %>

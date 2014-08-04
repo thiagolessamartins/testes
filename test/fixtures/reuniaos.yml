@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  data: 2014-08-04
+  horaInicio: 2014-08-04 20:04:20
+  horaFim: 2014-08-04 20:04:20
+  status: MyString
+  local_id: 
+  ata_id: 
+  pauta_id: 
+  categoria: MyString
+
+two:
+  titulo: MyString
+  data: 2014-08-04
+  horaInicio: 2014-08-04 20:04:20
+  horaFim: 2014-08-04 20:04:20
+  status: MyString
+  local_id: 
+  ata_id: 
+  pauta_id: 
+  categoria: MyString

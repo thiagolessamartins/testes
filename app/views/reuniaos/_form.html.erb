@@ -1,0 +1,53 @@
+<%= form_for(@reuniao) do |f| %>
+  <% if @reuniao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reuniao.errors.count, "error") %> prohibited this reuniao from being saved:</h2>
+
+      <ul>
+      <% @reuniao.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.date_select :data %>
+  </div>
+  <div class="field">
+    <%= f.label :horaInicio %><br>
+    <%= f.time_select :horaInicio %>
+  </div>
+  <div class="field">
+    <%= f.label :horaFim %><br>
+    <%= f.time_select :horaFim %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :local_id %><br>
+    <%= f.text_field :local_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ata_id %><br>
+    <%= f.text_field :ata_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pauta_id %><br>
+    <%= f.text_field :pauta_id %>
+  </div>
+  <div class="field">
+    <%= f.label :categoria %><br>
+    <%= f.text_field :categoria %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
